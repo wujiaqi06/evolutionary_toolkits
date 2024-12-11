@@ -5,9 +5,13 @@ Tools to handle sequence data
 Remove gap regins from alignments that are placed in an input folder.
 Alignments should have a name like "*.fas".
 
+
 CutSeq_byReferenceGenome.pl   #Remove gaps that do not exist in the reference sequence.
+
 RemoveGap_nuc.pl #Remove gaps from nucleotide sequence alignments.
+
 RemoveGap_cds.pl #Remove gaps from codon alignments.
+
 RemoveGap_pep.pl #Remove gaps from protein alignments.
 
 Usage:
