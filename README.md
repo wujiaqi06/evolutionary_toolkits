@@ -21,3 +21,13 @@ perl RemoveGap_nuc.pl -i Genome_folder -o output_folder -d deleting_rate -t fast
 perl RemoveGap_cds.pl -i Genome_folder -o output_folder -d deleting_rate -t fasta/phy
 perl RemoveGap_pep.pl -i Genome_folder -o output_folder -d deleting_rate -t fasta/phy
 ```
+## 2, mafft codon alignment
+Conduct the alignment at codon level using Mafft software
+
+```
+perl Translate.pl -i cds_align -o cds_align_trans -t vertebrate_mit.txt
+perl Auto_mafft.pl -i pro -o pro_align                                 
+perl CodonAlign.pl -c cds -p pro_align -o cds_align -t vertebrate_mit.txt
+```
+
+
